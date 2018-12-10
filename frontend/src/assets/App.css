@@ -1,0 +1,832 @@
+
+:root {
+  --main-section-color: #f6f5f5;
+  --main-section-color2: #e4e2e2;
+  --main-section-opacity: 0.95;
+  --main-text-color: rgb(0, 0, 0);
+  
+}
+
+.colorTheme {
+  color: #131200;
+  color: #78BC61;
+  color: #3A3042;
+  color: #C59B76;
+  color: #D7FCD4;
+}
+
+
+
+.mainPage {
+  background-image: linear-gradient(#0f7c80, #14324e65),
+  url('/img/laptop.JPG');
+  /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0)); */
+  background-attachment: center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  font-family: 'Adamina',
+  serif;
+}
+
+.mainLanding {
+  max-width: 1120px;
+  min-width: 0;
+  margin: auto;
+  justify-content: center;
+  /*write a media query for this */
+}
+
+.landing {
+  height: 100vh;
+}
+
+.landingGrid {
+  text-align: center;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+}
+
+
+.bannerContainer {
+  /* margin: 3% auto;  */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: 'Adamina',
+  serif;
+ 
+}
+
+.bannerText {
+  margin-top: 26vh;
+  
+}
+
+.bannerText span {
+  font-size: 3rem;
+  /* margin-top: 5px; */
+  font-weight: bold;
+
+}
+
+.bannerText p {
+  margin: 50px 0;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+/*---- Button transition ----- */
+.button_base {
+ 
+  border: 0;
+  font-size: 18px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -100px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+.button_base:hover {
+  cursor: pointer;
+}
+
+.b05_3d_roll {
+  perspective: 500px;
+  -webkit-perspective: 500px;
+  -moz-perspective: 500px;
+}
+
+.b05_3d_roll div {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: #ffffff solid 1px;
+  /* border-radius: 15px; */
+  pointer-events: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.b05_3d_roll div:nth-child(1) {
+  color: #fff;
+  background-color: #fff;
+  transform: rotateX(90deg);
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transform-origin: 50% 50% -25px;
+  -webkit-transform-origin: 50% 50% -25px;
+  -moz-transform-origin: 50% 50% -25px;
+}
+
+.b05_3d_roll div:nth-child(2) {
+  color: #fff;
+  background-color: #000;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transform-origin: 50% 50% -25px;
+  -webkit-transform-origin: 50% 50% -25px;
+  -moz-transform-origin: 50% 50% -25px;
+}
+
+.b05_3d_roll:hover div:nth-child(1) {
+  color: #000;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+}
+
+.b05_3d_roll:hover div:nth-child(2) {
+  background-color: #fff;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transform: rotateX(-90deg);
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+}
+
+
+/* Social Media Links--*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background-color: var(--main-section-color2);
+}
+
+.socialLinks i {
+  padding: 8px;
+} 
+
+.fa-linkedin {
+  color: #00a0dc;
+}
+
+.fa-github {
+  color: black;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-instagram {
+  color: #c32aa3;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+
+/*---ABout section ---*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+
+
+.aboutContent {
+  /* height: 50vh; */
+  background-color: var(--main-section-color);
+  opacity: var(--main-section-opacity);
+  text-align: center;
+  margin: auto auto;
+  padding: 1.5rem;
+  color: var(--main-text-color);
+  
+}
+
+
+.aboutTitle hr {
+  /* border-top: 1px solid #D7FCD4; */
+  margin: auto;
+  width: 10%;
+  padding-bottom: 20px;
+}
+
+.aboutTitle h4,
+.techTitle h4 {
+  font-size: 2rem;
+}
+
+.aboutText {
+  margin-top: 10px;
+}
+
+.aboutText p {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+
+/*---Techstack style---*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+
+.techCont {
+  background-color: var(--main-section-color2);
+  opacity: var(--main-section-opacity);
+  margin: 0;
+  padding: 1rem;
+  color: var(--main-text-color);
+  text-align: center;
+}
+
+.techTitle hr {
+  /* border-top: 1px solid #D7FCD4; */
+  margin: auto;
+  width: 10%;
+  padding-bottom: 5px;
+}
+
+.techIconsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.techIconsContainer h3 {
+  color: var(--main-text-color);
+  background-color: var(--main-section-color);
+  opacity: var(--main-section-opacity);
+  margin: 15px 2px 15px 2px;
+  /* padding: 5px; */
+  font-size: 1.5rem;
+}
+
+.techIconsContainer p {
+  color: #ffffff;
+  
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+.service-box {
+  background-color: #3A3042;
+  width: 280px;
+  height: 260px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.phpIcon {
+  font-size: 4rem;
+  
+}
+
+.sr-icons {
+  color: #D7FCD4;
+  padding: 10px 5px 0 5px;
+  margin: 5px;
+}
+
+
+/*----Skills grid-----*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+
+.skillsSection {
+  background-color: var(--main-section-color);
+  opacity: var(--main-section-opacity);
+  color: white;
+}
+
+.skillsTitle {
+  color: black;
+  padding: 10px;
+}
+
+.skillsTitle hr,
+.aboutTitle hr,
+.techTitle hr
+.categoryTabs hr {
+  margin: auto;
+  width: 10%;
+  padding-bottom: 5px;
+}
+
+.skillsGrid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+}
+.skillRow {
+  text-align: center;
+}
+
+.listTitle {
+  background-color: #3A3042;
+  font-size: 1.5rem;
+}
+
+.skillRow ul {
+  padding: 20px;
+}
+
+.skillRow li {
+ width: 160px;
+}
+
+.list-group-item {
+  justify-content: center;
+}
+
+.list-group-item i {
+  font-size: 5rem;
+}
+
+.list-group-item img {
+  height: auto;
+  width: 100%;
+}
+
+/*---- Project cards extra styling ----*/
+/*--------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------*/
+
+.categoryTabs {
+  margin: auto;
+  color: var(--main-text-color);
+  background-color: var(--main-section-color2);
+  opacity: var(--main-section-opacity);
+}
+
+.mdl-tabs a {
+  color: var(--main-text-color) !important;
+}
+
+.categoryTabs h3 {
+  text-align: center;
+  padding: 1.5rem 1rem 0;
+  margin-top: 0;
+}
+
+.mdl-grid {
+  justify-content: center;
+}
+
+.projectsGrid {
+ display: flex;
+ flex-flow: row wrap;
+ justify-content: center;
+}
+
+.project1React {
+  background: url('/img/win.jpg');
+  background-attachment: center;
+  background-size: cover;
+}
+.project1React .mdl-card__title-text {
+  background: black;
+  padding: 0.5rem;
+}
+
+.project2React {
+  background: url('/img/portfoliov2.jpg');
+  background-attachment: center;
+  background-size: cover;
+}
+
+.project1EJS {
+  background: url('/img/express.jpg');
+  background-attachment: center;
+  background-size: cover;
+}
+
+.project1php {
+  background: url('/img/phprestapi.jpg');
+  background-attachment: center;
+  background-size: cover;
+}
+
+.project1node {
+  background: url('/img/nodejs.jpeg');
+  background-attachment: center;
+  background-size: cover;
+}
+
+
+/*--- Contact Page -----*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+
+.contactGrid {
+  text-align: center;
+  justify-content: center;
+  color: var(--main-text-color);
+  background: var(--main-section-color);
+  opacity: var(--main-section-opacity);
+  padding: 1rem;
+}
+
+.contactGrid p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+} 
+
+.contactGrid hr {
+  border-top: 1px solid rgb(156, 156, 156);
+  margin: auto;
+  width: 10%;
+  padding-bottom: 20px;
+}
+
+.contactGrid h2 {
+  margin-top: 0;
+  padding: 15px 40px 15px 40px;
+}
+
+@media (max-width: 500px) {
+  .contactGrid h2 {
+    font-size: 20px;
+  }
+}
+
+.contactList  {
+  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contactForm {
+  max-width: 580px;
+  margin: auto;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.739);
+  border-radius: 5px;
+}
+.btn-success,
+.btn-primary {
+  border-radius: 5px;
+}
+
+.nav-item {
+  border-radius: 5px;
+}
+
+
+/*----- Resume Page ---*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+
+.resumeGrid {
+  text-align: center;
+  margin: auto;
+}
+
+.resumeGrid img {
+  width: 60%;
+}
+
+/*---Blog---*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+
+.blogContainer {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1rem;
+  justify-content: center;
+}
+
+.blogList {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.246);
+  
+  
+  
+}
+
+.blogList button {
+  margin: 0.5rem;
+}
+
+.blogView {
+  background: rgba(255, 255, 255, 0.938);
+  color: #131200;
+  max-width: 650px;
+  min-width: 650px;
+  padding: 2rem;
+  font-family: 'Adamina',
+  serif;
+  
+
+}
+
+.blogTitle {
+  border-bottom: 2px solid #000;
+}
+
+.blogDate {
+  border-top: 0.5px solid #000;
+  border-bottom: 0.5px solid #000;
+  margin: auto;
+  width: 100px;
+  
+}
+
+.blogDate p {
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.blogContent {
+  padding: 20px 0;
+}
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.blogContent img {
+  width: 100%;
+  padding: 10px;
+  
+}
+.blogContent p {
+  font-size: 1.2rem;
+}
+
+.blogHeading {
+  text-align: center;
+}
+/* like heart animations*/
+.isBlogLiked {
+  /* animation: heartbeat 1s infinite; */
+  color: red;
+}
+
+.isBlogLikedTrue {
+  color: red;
+  animation: heartbeat 1s 5;
+}
+
+.blogFooter {
+  text-align: center;
+}
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*---Counter---*/
+.counters {
+  text-align: center;
+  background-color: var(--main-section-color2);
+}
+
+
+/*----Spacer----*/
+.spacer {
+  background-color: #159957ec;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  opacity: 0.8;
+}
+
+.verticalSpacer {
+  background-color: #3A3042;
+  height: 30vh;
+  width: 2rem;
+  margin: 1rem;
+  padding: 0;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .verticalSpacer {
+    visibility: hidden;
+    height: 0px;
+    width: 0px;
+  }
+  .blogView {
+    margin-top: 1rem;
+  }
+  .mainLanding {
+    margin: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .blogView {
+    margin: 1rem 0 0;
+    min-width: 0px;
+  }
+  .blogContainer {
+    margin: 0;
+  }
+  .container {
+    padding: 0.1rem;
+  }
+  .aboutContent {
+    padding: 1px;
+  }
+  .bannerText span {
+    font-size: 2rem;
+  }
+  .aboutText p {
+    font-size: 1rem;
+    
+  }
+}
+
+/*----animations----*/
+/*--------------------------------------------------------------------*/
+
+/*---arrow down flashing ---*/
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+}
+
+@keyframes heartbeat {
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+/*-------------------------------------------------------------------*/
+/*---LGIN BOX----*/
+/* body#LoginForm {
+  background-image: url("https://hdwallsource.com/img/2014/9/blur-26347-27038-hd-wallpapers.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+} */
+
+.form-heading {
+  color: #fff;
+  font-size: 23px;
+}
+
+.panel h2 {
+  color: #444444;
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+.panel p {
+  color: #777777;
+  font-size: 14px;
+  margin-bottom: 30px;
+  line-height: 24px;
+}
+
+.login-form .form-control {
+  background: #f7f7f7 none repeat scroll 0 0;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  font-size: 14px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.main-div {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 2px;
+  margin: 10px auto 30px;
+  max-width: 38%;
+  padding: 50px 70px 70px 71px;
+}
+
+.login-form .form-group {
+  margin-bottom: 10px;
+}
+
+.login-form {
+  text-align: center;
+}
+
+.forgot a {
+  color: #777777;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.login-form .btn.btn-primary {
+  background: #f0ad4e none repeat scroll 0 0;
+  border-color: #f0ad4e;
+  color: #ffffff;
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0;
+}
+
+
+
+.botto-text {
+  color: #ffffff;
+  font-size: 14px;
+  margin: auto;
+}
+
+.login-form .btn.btn-primary.reset {
+  background: #ff9900 none repeat scroll 0 0;
+}
+
+/* .back {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.back a {
+  color: #444444;
+  font-size: 13px;
+  text-decoration: none;
+} */
+
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+
+
+.bannerText i {
+  color: white;
+  animation: fadeIn 0.5s infinite alternate;
+}
+
+
+.colorTheme {
+  color: #131200;
+  color: #78BC61;
+  color: #3A3042;
+  color: #C59B76;
+  color: #D7FCD4;
+}
+
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--Medium font 
+font-family: 'Adamina',
+serif;
+
+git checkout test
+git pull 
+git checkout master
+git pull
+git merge --no-ff --no-commit test
+git status
+
+git commit -m 'merge test branch'
+git push
+*/
